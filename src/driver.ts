@@ -18,7 +18,7 @@ const r1 = readline.createInterface({
 
 function userPrompts(){    
     console.log('Available Actions\n addCenter\n addWorkoutType \n addSlots \n viewUserBookings \n registerUser');
-
+                    
     r1.question('Action\n', (input)=>{
         const command = input.replace(')','').split('(');
         const [action, payload] = command;
